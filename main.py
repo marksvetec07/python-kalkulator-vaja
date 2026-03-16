@@ -13,14 +13,17 @@ def deli(a, b):
     return a / b
 
 print("Pozdrav! Mini kalkulator")
+print("0 = izhod")
 print("1 = seštevanje")
 print("2 = odštevanje")
 print("3 = množenje")
 print("4 = deljenje")
 
-izbira = input("Kaj želiš narediti? (1, 2, 3 ali 4): ")
+izbira = input("Kaj želiš narediti? (0, 1, 2, 3 ali 4): ")
 
-if izbira == "1":
+if izbira == "0":
+    print("Program se zapira. Nasvidenje!")
+elif izbira == "1":
     x = float(input("Prvo število: "))
     y = float(input("Drugo število: "))
     print(f"Rezultat: {sestej(x, y)}")
